@@ -1,4 +1,16 @@
+let iteration = 0;
+let history = []
+
 const calculate = async () => {
+	if (iteration > 0) {
+		document.getElementById('history-box').style.display = "block";
+		let latest = document.getElementById('log').value;
+		history.push(latest);
+		if (history.length > 5)	history.shift();
+		document.getElementById('history').innerHTML = `<p>${history.reverse().join("</p><p>")}</p>`;
+	}
+
+
 	const name = document.getElementById('guide-name').value;
 	const side = document.querySelector('input[name="jungle-side"]:checked').value;
 	const size = document.querySelector('input[name="world-size"]:checked').value;
@@ -28,6 +40,13 @@ const calculate = async () => {
 	}
 	result = Math.round(result);
 
-	document.getElementById('result-box').value = result
+	document.getElementById('result-box').value = result;
+	document.getElementById('log').value = `${name} (${_value}), ${side}, ${size} -> ${result} `;
+
+
+	iteration++;
 	return 200
 }
+
+
+

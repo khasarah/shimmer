@@ -6,7 +6,6 @@
 	<title>Shimmer Calculator</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" href="media/aegis.png" type="image/png">
-	<link rel="stylesheet" href="andybold.ttf">
 </head>
 <body>
 	<div class="content">
@@ -71,7 +70,12 @@
 			<form id="result">
 				<input id="button" type="button" value="Calculate" onclick="calculate()"><br>
 				<input type="text" name="result" placeholder="Result" id="result-box" disabled>
+				<input type="text" name="log" id="log" disabled hidden>
 			</form>
+			<div id="history-box">
+				<p>Latest 5 Calculations:</p>
+				<form id="history"></form>
+			</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="script.js"></script>
