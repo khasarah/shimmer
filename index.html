@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shimmer Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="media/aegis.png" type="image/png">
+	<link rel="stylesheet" href="andybold.ttf">
+</head>
+<body>
+	<div class="content">
+		<div id="content">
+			<form id="guide-name-select">
+				<label for="guide-name">Guide Name</label><br>
+				<select id="guide-name">
+					<option value="joe">Joe</option>
+					<option value="connor">Connor</option>
+					<option value="tanner">Tanner</option>
+					<option value="wyatt">Wyatt</option>
+					<option value="codi">Codi</option>
+					<option value="levi">Levi</option>
+					<option value="luke">Luke</option>
+					<option value="jack">Jack</option>
+					<option value="scott">Scott</option>
+					<option value="logan">Logan</option>
+					<option value="cole">Cole</option>
+					<option value="asher">Asher</option>
+					<option value="bradley">Bradley</option>
+					<option value="jacob">Jacob</option>
+					<option value="garrett">Garrett</option>
+					<option value="dylan">Dylan</option>
+					<option value="maxwell">Maxwell</option>
+					<option value="steve">Steve</option>
+					<option value="brett">Brett</option>
+					<option value="andrew">Andrew</option>
+					<option value="harley">Harley</option>
+					<option value="kyle">Kyle</option>
+					<option value="jake">Jake</option>
+					<option value="ryan">Ryan</option>
+					<option value="jeffrey">Jeffrey</option>
+					<option value="seth">Seth</option>
+					<option value="marty">Marty</option>
+					<option value="brandon">Brandon</option>
+					<option value="zach">Zach</option>
+					<option value="jeff">Jeff</option>
+					<option value="daniel">Daniel</option>
+					<option value="trent">Trent</option>
+					<option value="kevin">Kevin</option>
+					<option value="brian">Brian</option>
+					<option value="colin">Colin</option>
+					<option value="jan">Jan</option>
+				</select>
+			</form>
+			<form id="jungle-side-input">
+				<p>Jungle Side</p>
+				<label for="jungle-side-left">Left</label>
+				<input type="radio" id="jungle-side-left" name="jungle-side" value="left" checked>
+				<label for="jungle-side-right">Right</label>
+				<input type="radio" id="jungle-side-right" name="jungle-side" value="right">
+			</form>
+			<form id="world-size-input">
+				<p>World Size</p>
+				<label for="world-size-small">Small</label>
+				<input type="radio" id="world-size-small" name="world-size" value="small" checked>
+				<label for="world-size-medium">Medium</label>
+				<input type="radio" id="world-size-medium" name="world-size" value="medium">
+				<label for="world-size-large">Large</label>
+				<input type="radio" id="world-size-large" name="world-size" value="large">
+			</form>
+			<form id="result">
+				<input id="button" type="button" value="Calculate" onclick="calculate()"><br>
+				<input type="text" name="result" placeholder="Result" id="result-box" disabled>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
